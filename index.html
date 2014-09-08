@@ -1,0 +1,541 @@
+<html >
+	<head>
+		<meta charset="utf-8">
+		<link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="index.css">
+		<script src="bower_components/angularjs/angular.js"></script>
+		<script src="bower_components/angular-scroll-watch/src/angular-scroll-watch.js"></script>
+		<script src="controller.js"></script>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/underscore/underscore-min.js"></script>
+		
+		<style>
+
+		</style>
+	</head>
+	<body ng-app="myApp">
+		<div class="fersonal-nav" >
+			<div class="nav-element">
+				登入
+			</div> 
+			<div class="nav-element">
+				預約
+			</div>
+		</div>
+		<div class="box first-box" 
+			 data-0="opacity:1; top:0; display:block;"
+			 data-600="opacity:0; top:-100%; display:none;"
+			 >
+
+			<div class="first-box-inner first-box-inner-image">
+				<img src="cat.png" alt="">
+			</div>
+			<div class="first-box-inner first-box-inner-text">
+				<div>
+					<img src="Fersonal-text.png" alt="">
+				</div>
+				<div style="padding-left:0.5em;">
+					<p style="font-size:1.5em; ">
+						比逛街更貼近你的購衣服務
+					</p>
+					<p>破千位男性終身會員</p>
+					<p>保證快、狠、準找到你要的衣服</p>
+					<p>讓你輕鬆陽光有型</p>
+				</div>
+				<div class="first-box-button">
+					馬 上 預 約
+				</div>
+			</div>
+			<div class="first-box-inner first-box-instruct fbi-left">
+				<i class="fa fa-angle-left"></i>
+			</div>
+			<div class="first-box-inner first-box-instruct fbi-right">
+				<i class="fa fa-angle-right"></i>
+			</div>
+			<div class="first-box-inner first-box-scroll">
+				<i style="font-size:2em;" class="fa fa-chevron-down"></i> 向 下 滾 動
+			</div>
+		</div>
+
+		<!-- 2th box -->
+		<div class="box second-box box-intro"
+			 data-0="opacity:0; top:100%;"
+			 data-600="opacity:1; top:0%;"
+			 data-1400="opacity:1; top:0%; display:block;"
+			 data-1800="opacity:0; top:-100%; display:none;">
+		
+		
+			<div class="square square-mid"
+				 data-600="opacity:0; margin-left:-100px;"
+				 data-1000="opacity:1; margin-left:0px;">
+				
+			</div>
+			<div class="square square-mid" style="border-style:none;">
+				<img src="Fersonal-text.png" alt=""
+					 data-600="opacity:0; margin-left:-100px;"
+				 	 data-1000="opacity:1; margin-left:0px;">
+				<div data-600="opacity:0; margin-left:100px;"
+				 	 data-1000="opacity:1; margin-left:0px;">穿 搭 服 務</div>
+			</div>
+			<div class="square square-move"
+				 data-600="opacity:0; margin-left:100px;"
+				 data-1000="opacity:1; margin-left:0px;">
+				
+			</div>
+		</div>
+
+
+		<!-- 3rd box -->
+		<div class="box third-box step-box"
+			 data-0="opacity:0;"
+			 data-1400="opacity:0; top:100%";
+			 data-1800="opacity:1; top:0;">
+
+			<img class="step-1" src="nerd-1.png" alt=""
+				 data-2700="opacity:1; left:7%;"
+				 data-3100="opacity:0; left:12%">
+			<div class="step-1-text step-text"
+				 data-1800="opacity:0; top:38%;"
+				 data-2300="opacity:1; top:42%;"
+				 data-2700="opacity:1; top:42%;"
+				 data-2900="opacity:0; top:46%;">3 0 秒 快 速 預 約</div>
+		</div>
+
+		<!-- 4th box -->
+		<div class="box fourth-box step-box"
+			 data-2700="opacity:0;"
+			 data-3100="opacity:1;">
+			<img class="step-2" src="nerd-2.png" alt=""
+				 data-2700="opacity:0; left:7%;"
+				 data-3100="opacity:1; left:12%;"
+				 data-3500="opacity:1; left:12%;"
+				 data-3900="opacity:0; left:20%;">
+			<div class="step-2-text step-text"
+				 data-2700="opacity:0; top:20%;"
+				 data-3100="opacity:1; top:25%;"
+				 data-3500="opacity:1; top:25%;"
+				 data-3700="opacity:0; top:30%;">
+				專 人 來 電<br>
+				確 認 時 間 
+			</div>
+		</div>
+		<div class="box fifth-box step-box"
+			 data-3500="opacity:0;top:0px;"
+			 data-3900="opacity:1;top:0px;"
+			 data-4400="opacity:1;top:0px;"
+			 data-5000="opacity:0;top:-100%;"
+			 >
+
+			<img class="step-3" src="nerd-3.png" alt=""
+				 data-3500="opacity:0; right:20%;"
+				 data-3900="opacity:1; right:10%;">
+			<div class="step-3-text step-text"
+				 data-3500="opacity:0; top:25%;"
+				 data-3900="opacity:1; top:30%;">
+				現 場 一 對 一<br> 
+				 穿 搭 咨 詢
+			</div>
+		</div>
+		<div class="box sixth-box box-intro"
+			 data-4400="opacity:0; top:100%;"
+			 data-5000="opacity:1; top:0%;"
+			 data-5800="opacity:1; top:0%;"
+			 data-6200="opacity:0; top:-100%;">
+			 
+			<div class="square square-mid" 
+				 data-5000="opacity:0;
+				 			-webkit-transform-origin: right top;
+				 			-webkit-transform: rotateZ(-130deg);"
+				 data-5400="opacity:1;
+				 			-webkit-transform-origin: right top;
+				 			-webkit-transform: rotateZ(0deg);">
+				
+			</div>
+			<div class="square square-mid"
+				 style="border-style:none;"
+				 data-5300="opacity:0;"
+				 data-5500="opacity:1;">
+				<img src="Fersonal-text.png" alt="">
+				<div>形 象 顧 問</div>
+			</div>
+			<div class="square square-move"
+				 data-5000="opacity:0;
+				 			-webkit-transform-origin: left bottom;
+				 			-webkit-transform: rotateZ(-130deg);"
+				 data-5400="opacity:1;
+				 			-webkit-transform-origin: left bottom;
+				 			-webkit-transform: rotateZ(0deg);">
+				
+			</div>
+		</div>
+		<div class="box seventh-box"
+			 data-5800="opacity:0; top:100%;"
+			 data-6200="opacity:1; top:0%;"
+			 data-6600="opacity:1; top:0%;"
+			 data-7000="opacity:0; top:-100%;">
+			<img src="consultant.png" alt="">
+		</div>
+		<div class="box eighth-box consultant-1"
+			 data-6600="opacity:0;top:100%;"
+			 data-7000="opacity:1;top:0%;"
+			 data-9100="opacity:1;top:0%;"
+			 data-9500="opacity:1;top:0%;"
+			 data-9900="opacity:0;top:-100%;">
+			<div class="consultant-text">形 象 顧 問 近 距 離 與 您 的 一 對 一 穿 搭 服 務</div>
+			<div class="consultant-circle circle-1"
+				 data-7000="-webkit-transform:scale(0);"
+				 data-7300="-webkit-transform:scale(1);">
+				<div class="inner-circle">
+					<img class="circle-icon" src="hat.png" alt=""
+						 data-7200="-webkit-transform:rotate(10deg);"
+						 data-7300="-webkit-transform:rotate(-10deg);"
+						 data-7400="-webkit-transform:rotate(10deg);"
+						 data-7500="-webkit-transform:rotate(0deg);">
+					<div class="circle-intro">親 切</div>
+				</div>
+			</div>
+			<div class="consultant-circle circle-2"
+				 data-7500="-webkit-transform:scale(0);"
+				 data-7800="-webkit-transform:scale(1);">
+				<div class="inner-circle">
+					<img class="circle-icon" style="top:30%;" src="cane.png" alt=""
+						 data-7700="-webkit-transform-origin: right bottom;-webkit-transform: rotate(80deg);"
+						 data-7800="-webkit-transform: rotate(-5deg);"
+						 data-7900="-webkit-transform: rotate(10deg);"
+						 data-8000="-webkit-transform: rotate(0deg);">
+					<div class="circle-intro">專 業</div>
+				</div> 
+			</div>
+			<div class="consultant-circle circle-3"
+			 	 data-8000="-webkit-transform:scale(0);"
+				 data-8300="-webkit-transform:scale(1);">
+				<div class="inner-circle">
+					<img class="circle-icon" src="cigar.png" alt=""
+						 data-8200="-webkit-transform-origin: right bottom;-webkit-transform: rotate(30deg);"
+						 data-8400="-webkit-transform: rotate(-5deg);"
+						 data-8450="-webkit-transform: rotate(5deg);"
+						 data-8500="-webkit-transform: rotate(0deg);">
+					<div class="circle-intro">品 味</div>
+				</div>
+			</div>
+		</div>
+		<div class="box nineth-box"
+			 data-8700="opacity:0;top:0%;"
+			 data-9000="opacity:1;top:0%;"
+			 data-9500="opacity:1;top:0%;"
+			 data-9900="opacity:1;top:-100%;"
+			 data-9901="opacity:0;">
+			<div class="consultant-text">形 象 顧 問 近 距 離 與 您 的 一 對 一 穿 搭 服 務</div>
+			<div class="consultant-circle circle-1">
+				<div class="inner-circle">
+
+					<img class="circle-photo" src="consultant-left.png" alt="">
+					<div class="inner-circle-dimmer dimmer-tb dimmer-1">
+						透 過 真 誠 的 對 話<br>
+						了 解 最 真 實 的 你
+					</div>
+				</div>
+			</div>
+			<div class="consultant-circle circle-2">
+				<div class="inner-circle">
+					<img class="circle-photo" src="consultant-mid.png" alt="">
+					<div class="inner-circle-dimmer dimmer-lr dimmer-2">
+						不 說 場 面 話<br>
+							直 指 核 心<br>
+							解 決 你 的<br>
+							穿 搭 問 題
+					</div>
+				</div> 
+			</div>
+			<div class="consultant-circle circle-3">
+				<div class="inner-circle">
+					<img class="circle-photo" src="consultant-right.png" alt="">
+					<div class="inner-circle-dimmer dimmer-tb dimmer-3">
+						大 方 的 笑 容<br>
+						輕 鬆 的 氛 圍<br>
+						與 你 嘗 試 不 一 樣 的 改 變
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--  記得清掉  -->
+		<style>
+			.square-animate{
+				top:calc(50% - 200px);
+				left:calc(50% - 200px);
+				
+			}
+		</style>
+		<script>
+		var template = _.template('')
+		</script>
+		<!--  記得清掉  -->
+
+
+		<div class="box tenth-box box-intro"
+			 data-9500="opacity:0;"
+			 data-9900="opacity:1;"
+			 data-11000="opacity:1;"
+			 data-11400="opacity:0;"
+			 >
+
+
+			<div class="square square-animate" data-9900="margin-left:-8px; margin-top:8px;" data-10300="margin-left:0px; margin-top:0px;"></div>
+			<div class="square square-animate" data-9960="margin-left:-24px; margin-top:24px;" data-10300="margin-left:0px; margin-top:0px;"></div>
+			<div class="square square-animate" data-10000="margin-left:-40px; margin-top:40px;" data-10300="margin-left:0px; margin-top:0px;"></div>
+			<div class="square square-animate" data-10080="margin-left:-64px; margin-top:64px;" data-10300="margin-left:0px; margin-top:0px;"></div>
+			<div class="square square-animate" data-10140="margin-left:-96px; margin-top:96px;" data-10300="margin-left:0px; margin-top:0px;"></div>
+			<div class="square square-animate" data-10180="margin-left:-136px; margin-top:136px;" data-10300="margin-left:0px; margin-top:0px;"></div>
+			<div class="square square-animate" data-10200="margin-left:-192px; margin-top:192px;" data-10300="margin-left:0px; margin-top:0px;"></div>
+
+			<div class="square square-animate" data-9900="margin-left:8px; margin-top:-8px;" data-10300="margin-left:0px; margin-top:0px;"></div>
+			<div class="square square-animate" data-9960="margin-left:24px; margin-top:-24px;" data-10300="margin-left:0px; margin-top:0px;"></div>
+			<div class="square square-animate" data-10000="margin-left:40px; margin-top:-40px;" data-10300="margin-left:0px; margin-top:0px;"></div>
+			<div class="square square-animate" data-10080="margin-left:64px; margin-top:-64px;" data-10300="margin-left:0px; margin-top:0px;"></div>
+			<div class="square square-animate" data-10140="margin-left:96px; margin-top:-96px;" data-10300="margin-left:0px; margin-top:0px;"></div>
+			<div class="square square-animate" data-10180="margin-left:136px; margin-top:-136px;" data-10300="margin-left:0px; margin-top:0px;"></div>
+			<div class="square square-animate" data-10200="margin-left:192px; margin-top:-192px;" data-10300="margin-left:0px; margin-top:0px;"></div>
+			
+		 	
+	
+
+			<div class="square square-mid square-ani-left">
+				
+			</div>
+			<div class="square square-mid"
+				 data-10200="opacity:0;"
+				 data-10600="opacity:1;">
+				<img src="Fersonal-text.png" alt="">
+				<div>收 費 方 式</div>
+			</div>
+			<div class="square square-move">
+				
+			</div>
+		</div>
+		<div class="box eleventh-box"
+			 data-11000="opacity:0;"
+			 data-11400="opacity:1;"
+			 data-12600="opacity:1;"
+			 data-13000="opacity:0;"
+			 >
+			<img src="room.png" alt=""
+				 data-11600="-webkit-filter: blur(0px);
+				 			 -webkit-transform:scale(1.2,1.2);"
+				 data-12000="-webkit-filter: blur(5px);
+				 			 -webkit-transform:scale(1,1);">
+			<div class="eleventh-text-dimmer">
+				<div class="eleventh-text"
+					 data-11800="margin-top:-20px;
+					 			 opacity:0;"
+					 data-12200="margin-top:0px;
+					 			 opacity:1;">
+					<div class="eleventh-dimmer-title">首 創 低 消 式 &nbsp; 購 衣 服 務 模 式</div>
+					<div class="eleventh-dimmer-content">顧 問 服 務： 無 價<br>
+						穿 搭 教 學： 首 次 免 費<br>
+						若 購 買 服 飾 再 收 相 關 服 飾 費 用 即 可</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="box twelfth-box box-intro"
+			 data-12600="opacity:0;"
+			 data-13000="opacity:1;"
+			 data-13800="opacity:1;"
+			 data-14200="opacity:0;">
+			<div class="square square-mid"
+				 data=13000="margin-left:100%;"
+				 data-13100="margin-left:0%; border-radius:200px;"
+				 data-13400="border-radius:0px;">
+				
+			</div>
+			<div class="square square-mid" style="border-style:none;"
+
+				 data-13300="opacity:0;-webkit-transform:scale(0,0);"
+				 data-13500="opacity:1;-webkit-transform:scale(1,1);">
+				<img src="Fersonal-text.png" alt="">
+				<div>商 品 價 格</div>
+			</div>
+			<div class="square square-move"
+				 data=13000="margin-left:-100%;"
+				 data-13100="margin-left:0%; border-radius:200px;"
+				 data-13400="border-radius:0px;">
+				
+			</div>
+		</div>
+		<div class="box thirteenth-box"
+			 data-13800="opacity:0;"
+			 data-14200="opacity:1;"
+			 data-16100="opacity:1;"
+			 data-16500="opacity:0;">
+			<img src="closet.png" alt=""
+				 data-14400="-webkit-filter: blur(0px);
+				 			 -webkit-transform:scale(1.2,1.2);"
+				 data-14800="-webkit-filter: blur(5px);
+				 			 -webkit-transform:scale(1,1);">
+			<div class="thirteenth-text-dimmer">
+				<div class="thirteenth-text"
+					 data-14600="margin-top:-20px;
+					 			 opacity:0;"
+					 data-15700="margin-top:0px;
+					 			 opacity:1;">
+					<div class="thirteenth-dimmer-title">公 平 定 價 &nbsp; 質 感 品 味</div>
+					<div class="thirteenth-dimmer-content">
+						提 供 您 的 預 算 範 圍 ， 讓 我 們 為 您 做 最 好 的 規 劃 。<br>
+						基 本 款 商 品 約 $1,280 起
+					</div>	
+				</div>
+				
+			</div>
+		</div>
+		<div class="box fouteenth-box box-intro"
+			 data-16100="opacity:0;"
+			 data-16500="opacity:1;"
+			 data-17400="opacity:1;-webkit-filter: blur(0px);"
+			 data-17800="opacity:0;-webkit-filter: blur(200px);">
+			<div class="square square-mid"
+				 data-16400="border-top-width:0px;"
+				 data-16550="border-top-width:1px;
+				 			 border-right-width:0px;"
+				 data-16700="border-right-width:1px;
+				 			 border-bottom-width:0px;"
+				 data-16850="border-bottom-width:1px;
+				 			 border-left-width:0px;"
+				 data-17000="border-left-width:1px;">
+				
+			</div>
+			<div class="square square-mid" style="border-style:none;"
+				 data-16500="opacity:0;
+				 			 -webkit-filter: blur(10px);"
+				 data-17000="opacity:1;
+				 			 -webkit-filter: blur(0px);">
+				<img src="Fersonal-text.png" alt="">
+				<div>合 作 品 牌</div>
+			</div>
+			<div class="square square-move"
+				 data-16400="border-bottom-width:0px;"
+				 data-16550="border-bottom-width:1px;
+				 			 border-left-width:0px;"
+				 data-16700="border-left-width:1px;
+				 			 border-top-width:0px;"
+				 data-16850="border-top-width:1px;
+				 			 border-right-width:0px;"
+				 data-17000="border-right-width:1px;">
+				
+			</div>
+		</div>
+		<div class="box fifteenth-box"
+			 data-17400="opacity:0;"
+			 data-17800="opacity:1;"
+			 data-18900="opacity:1;"
+			 data-19300="opacity:0;">
+			<img class="hand" src="hand.png" alt=""
+				 data-18100="-webkit-filter: blur(0px);
+				 			 -webkit-transform:scale(1.2,1.2);"
+				 data-18500="-webkit-filter: blur(6px);
+				 			 -webkit-transform:scale(1,1);">
+			<div class="trademark-row">
+				<div style=""
+					 data-18300="opacity:0; margin-left:70%;"
+				 	 data-18500="opacity:1; margin-left:53%;">
+					<img class="trademark" src="bmw.png" alt="">
+					<img class="trademark" src="abc.png" alt="">
+					<img class="trademark" src="tiger.png" alt="">
+				</div>
+				<div style=""
+					 data-18300="opacity:0; margin-left:0%;"
+				 	 data-18500="opacity:1; margin-left:15%;">
+					<img class="trademark" src="nestie.png" alt="">
+					<img class="trademark" src="cc.png" alt="">
+					<img class="trademark" src="ea.png" alt="">
+					<img class="trademark" src="nike.png" alt="">
+				</div>
+
+			
+				
+			</div>
+			
+			
+		</div>
+
+		<div class="box sixteenth-box"
+			  data-18900="opacity:0;"
+			  data-19300="opacity:1;">
+			<img class="hand" src="last-fersonal.png" alt="">
+			<div class="contact"
+			 	 data-19100="top:-20%;
+					 		 -webkit-transform:rotate(20deg);"
+				 data-19300="top:20%;
+					 		 -webkit-transform:rotate(20deg);"
+				 data-19400="-webkit-transform:rotate(-10deg);"
+				 data-19500="-webkit-transform:rotate(0deg);"
+				 >
+			 	 C O N T A C T
+			</div>
+			<div class="contact-ways">
+				<div class="contact-way-part" style="left:0%"
+					 data-19300="top:-1000px;
+					 			 -webkit-transform:rotate(20deg);"
+				 	 data-19600="top:0px;-webkit-transform:rotate(20deg);"
+				 	 data-19700="-webkit-transform:rotate(-10deg);"
+				 	 data-19800="-webkit-transform:rotate(0deg);">
+					<div class="part-all part-image"><i class="fa fa-facebook-square"></i></div>
+					<div class="part-all part-text">fersonal</div>
+				</div>
+				<div class="contact-way-part" style="left:25%"
+				 	 data-19350="top:-1000px;
+					 			 -webkit-transform:rotate(20deg);"
+				 	 data-19600="top:0px;-webkit-transform:rotate(20deg);"
+				 	 data-19700="-webkit-transform:rotate(-10deg);"
+				 	 data-19800="-webkit-transform:rotate(0deg);">
+					<div class="part-all part-image"><i class="fa fa-envelope"></i></div>
+					<div class="part-all part-text">info@fersonal.com</div>
+					
+				</div>
+				<div class="contact-way-part" style="left:50%"
+				 	 data-19400="top:-1000px;
+					 			 -webkit-transform:rotate(20deg);"
+				 	 data-19600="top:0px;-webkit-transform:rotate(20deg);"
+				 	 data-19700="-webkit-transform:rotate(-10deg);"
+				 	 data-19800="-webkit-transform:rotate(0deg);">
+					<div class="part-all part-image"><i class="fa fa-phone"></i></div>
+					<div class="part-all part-text">0972-167-600</div>
+				</div>
+				<div class="contact-way-part" style="left:75%"
+					 data-19450="top:-1000px;
+					 			 -webkit-transform:rotate(20deg);"
+				 	 data-19600="top:0px;-webkit-transform:rotate(20deg);"
+				 	 data-19700="-webkit-transform:rotate(-10deg);"
+				 	 data-19800="-webkit-transform:rotate(0deg);">
+					<div class="part-all part-image"><i class="fa fa-map-marker"></i></div>
+					<div class="part-all part-text">110 台北市信義區<br>
+忠孝東路五段345巷1號</div>
+				</div>
+			</div>
+			<div class="re-button"
+				 data-19800="opacity:0;background-color: rgb(37,69,34);"
+				 data-20000="opacity:1;background-color: rgb(19,149,136);">馬 上 預 約</div>
+			<div class="fersonal-footer">
+				<div style="margin-left: calc(50% - 150px)">
+					<div class="footer-element">穿搭分享</div>
+					<div class="footer-element">購物專區</div>
+					<div class="footer-element">關於Fersonal</div>
+				</div>
+				
+			</div>
+			
+			
+		</div>
+
+
+
+
+
+
+	<script src="bower_components/skrollr/dist/skrollr.min.js"> </script>
+    <script type="text/javascript">
+   		var s = skrollr.init();
+    </script>
+
+	</body>
+</html>
