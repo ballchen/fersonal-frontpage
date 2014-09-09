@@ -15,6 +15,34 @@ body{
 .first-box-inner{
 	position:absolute;
 }
+.big-logo{
+	position:absolute;
+
+}
+.logo-text{
+	position:absolute;
+	color:white;
+	top:45%;
+	width:33%;
+	left:33.3%;
+	text-align: center;
+
+}
+.first-button{
+	position:absolute;
+	text-align:center;
+	color:white;
+	line-height: 50px;
+	top:60%;
+	left:40%;
+	width:20%;
+	height:50px;
+	border-style: solid;
+	border-radius: 50px;
+	border-color:white;
+	border-width: 1px;
+	background: rgba(0,0,0,0.7);
+}
 .first-box-inner-image{
 	width:100%;
 	height:100%;
