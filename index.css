@@ -16,6 +16,9 @@ body{
 	position:absolute;
 }
 .first-box-inner-image{
+	background-image: url(cat.png);
+	background-size: cover;
+	background-position: 0 50%;
 	width:100%;
 	height:100%;
 }
@@ -183,7 +186,11 @@ body{
 	top:30%;
 	left:12%;
 }
-
+.seventh-box{
+	background-image: url(consultant.png);
+	background-size: cover;
+	background-position: 0, 40%;
+}
 .seventh-box img{
 	margin-top:-100px;
 }
@@ -290,6 +297,14 @@ body{
 	margin-left:-5px;
 	
 }
+.eleventh-box-inner{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(room.png);
+	background-size:cover;
+	background-position: 0, 40%;
+}
 
 .eleventh-text{
 	position:absolute;
@@ -319,6 +334,14 @@ body{
 .thirteenth-box img{
 	margin-top: -120px;
 }
+.thirteenth-box-inner{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(closet.png);
+	background-size:cover;
+	background-position: 0, 40%;
+}
 .thirteenth-text-dimmer{
 	position:absolute;
 	top:0px;
@@ -343,6 +366,14 @@ body{
 	line-height: 1.3em;
 	
 }
+.fifteenth-box-inner{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(hand.png);
+	background-size:cover;
+	background-position: 0, 40%;
+}
 .hand{
 	position: absolute;
 	top: -6px;
@@ -353,6 +384,13 @@ body{
 	width:100%;
 	bottom: 15%;
 
+}
+.sixteenth-box-inner{
+	position: absolute;
+	width: 100%;
+	height:100%;
+	background-image: url(last-fersonal.png);
+	background-size:cover;
 }
 .contact{
 	position: absolute;
